@@ -1,23 +1,23 @@
-import { useState } from 'react';
-import classes from './NewPost.module.css';
+import { useState } from "react";
+import classes from "./NewPost.module.css";
 
-function NewPost({onCancel, onAddPost}) {
-  const [enteredBody, setEnteredBody] = useState('');
-  const [enteredAuthor, setEnteredAuthor] = useState('');
+function NewPost({ onCancel, onAddPost }) {
+  const [enteredBody, setEnteredBody] = useState("");
+  const [enteredAuthor, setEnteredAuthor] = useState("");
 
-  function bodyChangeHandler(event){
+  function bodyChangeHandler(event) {
     setEnteredBody(event.target.value);
   }
 
-  function authorChangeHandler(event){
+  function authorChangeHandler(event) {
     setEnteredAuthor(event.target.value);
   }
 
-  function submitHandler(event){
+  function submitHandler(event) {
     event.preventDefault();
     const postData = {
       body: enteredBody,
-      author: enteredAuthor
+      author: enteredAuthor,
     };
     onAddPost(postData);
     onCancel();
@@ -27,14 +27,16 @@ function NewPost({onCancel, onAddPost}) {
     <form className={classes.form} onSubmit={submitHandler}>
       <p>
         <label htmlFor="body">Text</label>
-        <textarea id="body" required rows={3} onChange={bodyChangeHandler}/>
+        <textarea id="body" required rows={3} onChange={bodyChangeHandler} />
       </p>
       <p>
         <label htmlFor="name">Your name</label>
-        <input type="text" id="name" required onChange={authorChangeHandler}/>
+        <input type="text" id="name" required onChange={authorChangeHandler} />
       </p>
       <p className={classes.actions}>
-        <button type='button' onClick={onCancel}>Cancel</button>
+        <button type="button" onClick={onCancel}>
+          Cancel
+        </button>
         <button>Submit</button>
       </p>
     </form>
