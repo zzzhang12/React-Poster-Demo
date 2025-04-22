@@ -11,6 +11,30 @@ A **single-page application** (SPA) where users can:
 
 It demonstrates **data loading**, **data submission**, and **page navigation** — all without reloading the page.
 
+## Screenshots
+
+### 1. Empty state
+![Empty state view](./screenshots/empty-state.png)  
+The very first view when no posts have been created yet.
+
+---
+
+### 2. New Post modal
+![New post modal](./screenshots/new-post-modal.png)  
+The form popup where you enter your text and name to create a new post.
+
+---
+
+### 3. Posts list view
+![Posts list view](./screenshots/posts-list.png)  
+After adding several entries, the posts appear in a responsive grid.
+
+---
+
+### 4. Post detail overlay
+![Post detail overlay](./screenshots/post-detail.png)  
+Clicking on any post flashes a detail overlay.
+
 ---
 
 ## 🛠 How to run it
