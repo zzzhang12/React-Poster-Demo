@@ -49,7 +49,8 @@ npm run dev
 
 ### 2. Set up the backend
 
-I used a separate dummy backend which handles storing and retrieving posts. It’s available here:
+I used a separate dummy backend which handles storing and retrieving posts. It’s available here: [React Poster Backend](https://github.com/zzzhang12/React-Poster-Backend)
+
 To run it:
 ```bash
 git clone https://github.com/yourusername/react-poster-backend.git
